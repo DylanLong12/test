@@ -2,23 +2,23 @@ package inheritanceDemoV3;
 //version 3
 public class Animal {
 
-    protected boolean beingDangerous;
-    protected int numberOfLegs;
-    protected String diet;
+    protected boolean beingDangerous = false;
+    protected int numberOfLegs = 4;
+    protected String diet = "omnivore";
 
     //this is a default constructor that sets the default values for the fields
     //this is added to this version 3. By adding this, we can now create an object of the Animal class without passing any parameters
-    public Animal(){
-        this.beingDangerous = true;
-        this.numberOfLegs = 4;
-        this.diet = "Carnivore";
-    }
-
-    public Animal(boolean beingDangerous, int numberOfLegs, String diet){
-        this.beingDangerous = beingDangerous;
-        this.numberOfLegs = numberOfLegs;
-        this.diet = diet;
-    }
+//    public Animal(){
+//        this.beingDangerous = true;
+//        this.numberOfLegs = 4;
+//        this.diet = "Carnivore";
+//    }
+//
+//    public Animal(boolean beingDangerous, int numberOfLegs, String diet){
+//        this.beingDangerous = beingDangerous;
+//        this.numberOfLegs = numberOfLegs;
+//        this.diet = diet;
+//    }
 
     public boolean isBeingDangerous() {
         return beingDangerous;
@@ -51,7 +51,4 @@ public class Animal {
     public void eat(){
         System.out.print("Animal class: Eating -  ");
     }
-
-
-
 }

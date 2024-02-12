@@ -2,6 +2,7 @@
 //import Animal from animal folder/package.
 
 
+
 package inheritanceDemoV2;
 
 import animal.Animal;
@@ -31,7 +32,7 @@ public class Reptile extends Animal {
 
     }
 
-    public Reptile(Animal animal){
+    public Reptile(Animal animal) {
         super(animal.isBeingDangerous(), animal.getNumberOfLegs(), animal.getDiet());
         // super(animal.beingDangerous,animal.numberOfLegs, animal.diet);
         // --> but in this case, this constructor is taking Animal object.
@@ -52,5 +53,9 @@ public class Reptile extends Animal {
         System.out.println(" Eat anything.  ");
     }
 
+    public static void main(String[] args) {
+        Reptile reptile = new Reptile();
+        System.out.println(reptile.getDiet());
+    }
 
 }
